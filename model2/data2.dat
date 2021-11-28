@@ -1,0 +1,46 @@
+set K := rice  lentils  chicken vegetable_oil ;
+
+set L := protein fat carbohydrate;
+
+set G := cereals_grains pulses_vegetables oils_fats meat_fish_diary;
+
+param nutReq:=
+protein 45
+fat 45
+carbohydrate 250;
+
+
+param nutVal := rice protein  0
+                rice fat 0
+                rice carbohydrate 1
+
+                lentils protein 1
+                lentils fat 0
+                lentils carbohydrate 0
+
+                chicken protein 1
+                chicken fat 0
+                chicken carbohydrate 0
+
+                vegetable_oil protein 0.0
+                vegetable_oil fat 2.0
+                vegetable_oil carbohydrate 0.0 ;
+
+param group :=  rice cereals_grains
+                #bulgur cereals_grains
+                #beans pulses_vegetables
+                lentils pulses_vegetables
+                vegetable_oil oils_fats
+                #meat meat_fish_diary
+                chicken meat_fish_diary;
+
+
+param minRat := cereals_grains 250
+                pulses_vegetables 30
+                oils_fats 15
+                meat_fish_diary 10;
+
+param maxRat := cereals_grains 500
+                pulses_vegetables 130
+                oils_fats 70
+                meat_fish_diary 80;

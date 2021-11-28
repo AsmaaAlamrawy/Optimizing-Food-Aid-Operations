@@ -1,0 +1,22 @@
+set K := rice  lentils vegetable_oil ;
+
+set L := protein fat carbohydrate;
+
+param nutReq:=
+protein 45
+fat 45
+carbohydrate 250;
+
+
+param nutVal := rice protein  0
+                 rice fat 0
+                 rice carbohydrate 1
+
+                 lentils protein 1
+                 lentils fat 0
+                 lentils carbohydrate 0
+
+                 vegetable_oil protein 0.0
+                 vegetable_oil fat 2.0
+                 vegetable_oil carbohydrate 0.0 ;
+
